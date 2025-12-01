@@ -16,6 +16,13 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    // ===============================================
+    // <<< NOVO BLOCO ADICIONADO PARA VIEW BINDING >>>
+    buildFeatures {
+        viewBinding = true
+    }
+    // ===============================================
+
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -32,7 +39,7 @@ android {
 }
 
 dependencies {
-
+    implementation("androidx.recyclerview:recyclerview:1.4.0")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
